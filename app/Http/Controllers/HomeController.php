@@ -11,10 +11,6 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
 
     /**
      * Show the application dashboard.
@@ -28,5 +24,10 @@ class HomeController extends Controller
         $desa = \App\Models\Desa::all();
         $potensi = \App\Models\Potensi::all();
         return view('home', compact('infotanah', 'pemiliklahan', 'desa', 'potensi'));
+    }
+
+    public function qgis()
+    {
+        return view('layouts/qgis');
     }
 }

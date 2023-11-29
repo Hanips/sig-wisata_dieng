@@ -16,7 +16,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="text-center">
-                    <img src="{{ asset('koltim.png') }}" alt="Kop Dinas Pertanian" width="60px">
+                    <img src="{{ asset('cirebon.png') }}" alt="Kop Dinas Pertanian" width="60px">
                     <h4 class="mt-2">DINAS PERTANIAN</h4>
                     <h4 class="mt-0">KABUPATEN KOLAKA TIMUR</h4>
                 </div>

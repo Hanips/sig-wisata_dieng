@@ -43,7 +43,7 @@
                 <a href="" class="navbar-brand">
                     <h1 class="m-0 text-secondary">
                         <span class="text-primary">
-                            <img src="{{ url('/') }}/koltim.png" alt="Logo" style="height: 50px;">
+                            <img src="{{ url('/') }}/cirebon.png" alt="Logo" style="height: 50px;">
                         </span>
                     </h1>
                 </a>
@@ -66,17 +66,16 @@
     </div>
     <!-- Navbar End -->
 
-
     <!-- Carousel Start -->
     <div id="home" class="container-fluid p-0">
         <div id="header-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="{{ url('/') }}/img/koltim_sampul.png" alt="Image">
+                    <img class="w-100" src="{{ url('/') }}/img/cirebon_sampul.png" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-md-3">Selamat datang di website</h4>
-                            <h2 class="display-4 text-white mb-md-4 text-bold text-uppercase ">Dinas Pertanian <br> Kabupaten Kolaka Timur</h2>
+                            <h2 class="display-4 text-white mb-md-4 text-bold text-uppercase ">Sebaran TBC dan Peternakan <br> Cirebon</h2>
                             {{-- <a href="#" class="btn btn-primary py-md-3 px-md-5 mt-2">Learn More</a> --}}
                         </div>
                     </div>
@@ -95,7 +94,7 @@
                         <i class="fa fa-2x fa-map-marker-alt text-white m-0 mr-3"></i>
                         <div class="d-flex flex-column">
                             <h5 class="text-white font-weight-medium">Lokasi</h5>
-                            <p class="m-0 text-white">Welala, Ladongi, Kab. Kolaka Timur</p>
+                            <p class="m-0 text-white">Cirebon, Jawa Barat, Indonesia</p>
 
                         </div>
                     </div>
@@ -105,7 +104,7 @@
                         <i class="fa fa-2x fa-envelope text-white m-0 mr-3"></i>
                         <div class="d-flex flex-column">
                             <h5 class="text-white font-weight-medium">Email</h5>
-                            <p class="m-0 text-white">pertaniankoltim@ gmail.com</p>
+                            <p class="m-0 text-white">walkotcirebon@ gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -128,12 +127,12 @@
         <div class="container pt-0 pt-lg-4">
             <div class="row align-items-center">
                 <div class="col-lg-5">
-                    <img class="img-fluid" src="{{ url('/') }}/img/koltim7.jpg" alt="">
+                    <img class="img-fluid" src="{{ url('/') }}/img/balkot_cirebon.png" alt="">
                 </div>
                 <div class="col-lg-7 mt-5 mt-lg-0 pl-lg-5">
                     <h6 class="text-secondary text-uppercase font-weight-medium mb-3">Tentang Visi Misi</h6>
                     <h1 class="mb-4">Visi</h1>
-                    <h5 class="font-weight-medium font-italic mb-5">"Menjadikan Kolaka Timur Sejahtera Bersama Masyarakat Kolaka Timur yang Agamis, Maju, Mandiri dan Berkeadilan"</h5>
+                    <h5 class="font-weight-medium font-italic mb-5">"Menjadikan Kota dan Kabupaten Cirebon Sejahtera dan Sehat Bersama Masyarakat yang Agamis, Maju, Mandiri dan Berkeadilan"</h5>
                     <h1 class="mb-3">Misi</h1>
                     <div class="row">
                         <div class="col-sm-12 pt-3">
@@ -145,7 +144,7 @@
                         <div class="col-sm-12 pt-3">
                             <div class="d-flex align-items-center">
                                 <i class="fa fa-check text-primary mr-2"></i>
-                                <p class="text-secondary font-weight-medium m-0">Peningkatan Ekonomi Masyarakat dan Produktifitas Pertanian, Perkebunan, Penguatan UMKM, Koperasi, dan Pelaku Usaha</p>
+                                <p class="text-secondary font-weight-medium m-0">Peningkatan Ekonomi Masyarakat dan Produktifitas Peternakan, dan Pencegahan Penyakit TBC</p>
                             </div>
                         </div>
                     </div>
@@ -288,8 +287,8 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="d-flex flex-column align-items-center justify-content-center bg-secondary h-100 py-5 px-3">
-                        <img src="{{ asset('koltim.png') }}" alt="" class="img-fluid m-2" width="30%">
-                        <img src="{{ asset('img/koltim_sampul.png') }}" alt="" class="img-fluid m-2">
+                        <img src="{{ asset('cirebon.png') }}" alt="" class="img-fluid m-2" width="30%">
+                        <img src="{{ asset('img/cirebon_sampul.png') }}" alt="" class="img-fluid m-2">
                     </div>
                 </div>
             </div>

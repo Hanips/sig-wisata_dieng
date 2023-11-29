@@ -6,10 +6,10 @@
         <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <link rel="stylesheet" href="./../../public/resources/ol.css">
-        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
-        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
-        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <link rel="stylesheet" href="{{ asset('resources/ol.css') }}">
+        <link rel="stylesheet" href="{{ asset('resources/fontawesome-all.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('resources/ol-layerswitcher.css') }}">
+        <link rel="stylesheet" href="{{ asset('resources/qgis2web.css') }}">
         <style>
         .ol-geocoder.gcd-gl-container {
             top: 100px!important;
@@ -70,7 +70,7 @@
             color: black !important;
         }
         </style>
-        <link href="resources/ol-geocoder.min.css" rel="stylesheet">
+        <link href="{{ asset('resources/ol-geocoder.min.css') }}" rel="stylesheet">
 <style>
 .tooltip {
   position: relative;
@@ -129,16 +129,16 @@
                 <div id="popup-content"></div>
             </div>
         </div>
-        <script src="resources/qgis2web_expressions.js"></script>
-        <script src="resources/polyfills.js"></script>
-        <script src="./resources/functions.js"></script>
-        <script src="./resources/ol.js"></script>
-        <script src="./resources/ol-layerswitcher.js"></script>
-        <script src="resources/ol-geocoder.js"></script>
-        <script src="layers/IndexjumlahpeternakdiKotaCirebon_3.js"></script><script src="layers/IndexjumlahorangyangterkenaTBCdiKabupatenCirebon_4.js"></script><script src="layers/SUNGAI_LN_25K_5.js"></script><script src="layers/PEMERINTAHAN_PT_25K_6.js"></script>
-        <script src="styles/IndexjumlahpeternakdiKotaCirebon_3_style.js"></script><script src="styles/IndexjumlahorangyangterkenaTBCdiKabupatenCirebon_4_style.js"></script><script src="styles/SUNGAI_LN_25K_5_style.js"></script><script src="styles/PEMERINTAHAN_PT_25K_6_style.js"></script>
-        <script src="./layers/layers.js" type="text/javascript"></script> 
-        <script src="./resources/Autolinker.min.js"></script>
-        <script src="./resources/qgis2web.js"></script>
+        <script src="{{ asset('resources/qgis2web_expressions.js') }}"></script>
+        <script src="{{ asset('resources/polyfills.js') }}"></script>
+        <script src="{{ asset('resources/functions.js') }}"></script>
+        <script src="{{ asset('resources/ol.js') }}"></script>
+        <script src="{{ asset('resources/ol-layerswitcher.js') }}"></script>
+        <script src="{{ asset('resources/ol-geocoder.js') }}"></script>
+        <script src="{{ asset('js/layers/IndexjumlahpeternakdiKotaCirebon_3.js') }}"></script><script src="{{ asset('js/layers/IndexjumlahorangyangterkenaTBCdiKabupatenCirebon_4.js') }}"></script><script src="{{ asset('js/layers/SUNGAI_LN_25K_5.js') }}"></script><script src="{{ asset('js/layers/PEMERINTAHAN_PT_25K_6.js') }}"></script>
+        <script src="{{ asset('js/styles/IndexjumlahpeternakdiKotaCirebon_3_style.js') }}"></script><script src="{{ asset('js/styles/IndexjumlahorangyangterkenaTBCdiKabupatenCirebon_4_style.js') }}"></script><script src="{{ asset('js/styles/SUNGAI_LN_25K_5_style.js') }}"></script><script src="{{ asset('js/styles/PEMERINTAHAN_PT_25K_6_style.js') }}"></script>
+        <script src="{{ asset('js/layers/layers.js') }}" type="text/javascript"></script> 
+        <script src="{{ asset('resources/Autolinker.min.js') }}"></script>
+        <script src="{{ asset('resources/qgis2web.js') }}"></script>
     </body>
 </html>

@@ -86,7 +86,7 @@ var lyr_SUNGAI_LN_25K_5 = new ol.layer.Vector({
                 source:jsonSource_SUNGAI_LN_25K_5, 
                 style: style_SUNGAI_LN_25K_5,
                 interactive: true,
-                title: '<img src="styles/legend/SUNGAI_LN_25K_5.png" /> SUNGAI_LN_25K'
+                title: '<img src="../styles/legend/SUNGAI_LN_25K_5.png" /> SUNGAI_LN_25K'
             });
 var format_PEMERINTAHAN_PT_25K_6 = new ol.format.GeoJSON();
 var features_PEMERINTAHAN_PT_25K_6 = format_PEMERINTAHAN_PT_25K_6.readFeatures(json_PEMERINTAHAN_PT_25K_6, 
