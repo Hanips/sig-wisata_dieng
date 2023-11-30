@@ -15,7 +15,7 @@ class TourController extends Controller
     public function index()
     {
         $tour = Tour::get();
-        return view ('livewire.peta', compact('tour'));
+        return view ('livewire.halaman-user', compact('tour'));
     }
 
     /**
