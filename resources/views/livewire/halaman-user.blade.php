@@ -177,35 +177,56 @@
     <!-- Pricing Plan End -->
 
     <!-- Services Start -->
-    <div id="datawisata" class="container-fluid pt-5 pb-3">
+    <!-- Destinasi Wisata Start -->
+    <div id="destinasiwisata" class="container-fluid pt-5 pb-3">
         <div class="container">
-            <h1 class="display-4 text-center mb-5">Data Wisata</h1>
+            <h1 class="display-4 text-center mb-5">Destinasi Wisata</h1>
             <div class="row">
-                <div class="col-lg-7 m-0 my-lg-5 pt-0 pt-lg-5 pr-lg-5">
-                    <h1 class="mb-4">Data Wisata</h1>
-                    <p>Berikut data wisata berdasarkan data pada Kementrian Pariwisata dan Ekonomi Kreatif Indonesia:</p>
-                    <div class="row">
-                        <h5 class="font-weight-bold">Total Destinasi Wisata:</h5>
-                        <div class="col-sm-6 mb-4 d-flex">
-                            <h1 class="text-secondary" data-toggle="counter-up">30  </h1>
-                            <span class="text-center font-weight-bold align-items-center text-secondary" style="display:flex">  Wisata</span>
-                        </div>
-                        <h5 class="font-weight-bold">Total Luas Kawasan Wisata Dieng:</h5>
-                        <div class="col-sm-6 mb-4 d-flex">
-                            <h1 class="text-secondary" data-toggle="counter-up">4.600 </h1>
-                            <span class="text-center font-weight-bold align-items-center text-secondary" style="display:flex"> Ha</span>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="path/to/image1.jpg" class="card-img-top" alt="Destinasi 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Destinasi 1</h5>
+                            <p class="card-text">Deskripsi destinasi 1.</p>
+                            <a href="#" class="btn btn-primary">Detail</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5">
-                    <div class="d-flex flex-column align-items-center justify-content-center bg-secondary h-100 py-5 px-3">
-                        <img src="{{ asset('desawisatadieng.png') }}" alt="" class="img-fluid m-2" width="30%">
-                        <img src="{{ asset('img/tempat-wisata-di-dieng.jpg') }}" alt="" class="img-fluid m-2">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="path/to/image2.jpg" class="card-img-top" alt="Destinasi 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Destinasi 2</h5>
+                            <p class="card-text">Deskripsi destinasi 2.</p>
+                            <a href="#" class="btn btn-primary">Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="path/to/image3.jpg" class="card-img-top" alt="Destinasi 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Destinasi 3</h5>
+                            <p class="card-text">Deskripsi destinasi 3.</p>
+                            <a href="#" class="btn btn-primary">Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="path/to/image4.jpg" class="card-img-top" alt="Destinasi 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Destinasi 4</h5>
+                            <p class="card-text">Deskripsi destinasi 4.</p>
+                            <a href="#" class="btn btn-primary">Detail</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+<!-- Destinasi Wisata End -->
+
     <!-- Services End -->
 
 
@@ -307,6 +328,7 @@
 
             var marker = L.marker([-7.220264, 109.903978], { pmIgnore: true })
                 .bindTooltip("Kawah Sikidang")
+                //.bindPopup("Kecamatan pati")
                 .addTo(map);
 
             var marker = L.marker([-7.208906, 109.890893], { pmIgnore: true })
