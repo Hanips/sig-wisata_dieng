@@ -142,15 +142,16 @@
     <script>
         document.addEventListener('livewire:load', () => {
             // maps leaflet
-            var map = L.map('map').setView([-4.18, 121.8931], 13);
+            var map = L.map('map').setView([-6.737246, 109.9015], 15);
             L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/">2022</a>',
+                attribution: '&copy; <a href="https://www.openstreetmap.org/">2023</a>',
                 maxZoom: 23,
-                id: 'mapbox/satellite-streets-v11',
+                id: 'mapbox/streets-v11',
                 tileSize: 512,
                 zoomOffset: -1,
-                accessToken: 'pk.eyJ1IjoiYW5vbnk3OTExIiwiYSI6ImNsYTZiYWwybzE2d2YzcnFxaWdvNGdsbHMifQ.LtkD7CYPKYyAmyXG6tqNbA'
+                accessToken: 'pk.eyJ1IjoiaGFuaXBwdyIsImEiOiJjbHBrZHk0MmMwN3VpMmpvZjhjdWRrYnNlIn0.s2Jc-GJnbtfr1l8HU49tNA'
             }).addTo(map);
+
             // random color
             function getRandomColor() {
                 var letters = '0123456789ABCDEF';
@@ -176,6 +177,7 @@
                     fillColor: getRandomColor(),
                     fillOpacity: 0.8
                 }).addTo(map);
+                
 
                 // random marker color
                 // jadikan marker jika zoom dibawah 15

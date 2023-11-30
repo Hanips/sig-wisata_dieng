@@ -6,7 +6,7 @@
         <div class="col-md-12">
             <div class="card shadow shadow-md">
                 <div class="card-header bg-dark text-white text-center ">
-                    <img class="img-fluid " src="{{ asset('cirebon.png') }}" alt="logo" width="70px" height="70px">
+                    <img class="img-fluid " src="{{ asset('desawisatadieng.png') }}" alt="logo" width="70px" height="70px">
                     {{-- sig potensi sawa koltim --}}
                     <h3 class=" mt-2">Sistem Informasi Geografis (SIG) Potensi Sawah</h3>
                     <h1>KABUPATEN KOLAKA TIMUR</h1>
