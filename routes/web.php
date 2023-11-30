@@ -11,6 +11,8 @@ use App\Http\Livewire\Desa as LivewireDesa;
 use App\Http\Livewire\Potensi as LivewirePotensi;
 use App\Http\Livewire\Pemiliklahan as LivewirePemiliklahan;
 
+// Auth::routes();
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/info_tanah', InfoSawah::class)->name('info_tanah');
 Route::get('/desa', LivewireDesa::class)->name('desa');

@@ -101,8 +101,8 @@ var lyr_PEMERINTAHAN_PT_25K_6 = new ol.layer.Vector({
                 style: style_PEMERINTAHAN_PT_25K_6,
                 interactive: true,
     title: 'PEMERINTAHAN_PT_25K<br />\
-    <img src="styles/legend/PEMERINTAHAN_PT_25K_6_0.png" /> Kantor Camat<br />\
-    <img src="styles/legend/PEMERINTAHAN_PT_25K_6_1.png" /> Kantor Kepala Desa<br />\
+    <img src="legend/PEMERINTAHAN_PT_25K_6_0.png" /> Kantor Camat<br />\
+    <img src="legend/PEMERINTAHAN_PT_25K_6_1.png" /> Kantor Kepala Desa<br />\
     <img src="styles/legend/PEMERINTAHAN_PT_25K_6_2.png" /> Kantor Lurah<br />\
     <img src="styles/legend/PEMERINTAHAN_PT_25K_6_3.png" /> Kantor Polisi<br />\
     <img src="styles/legend/PEMERINTAHAN_PT_25K_6_4.png" /> Kantor Wali Kota<br />'
