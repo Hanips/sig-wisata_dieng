@@ -54,11 +54,9 @@
                     <div class="navbar-nav ml-auto py-0">
                         <a href="#home" class="nav-item nav-link active">Home</a>
                         <a href="#visimisi" class="nav-item nav-link">Kawasan Wisata Dieng</a>
-                        <!-- <a href="#struktur" class="nav-item nav-link">Struktur Organisasi</a> -->
-                        <a href="#infotanah" class="nav-item nav-link">Informasi Tanah</a>
                         <a href="#datawisata" class="nav-item nav-link">Data Wisata</a>
                         <a href="#destinasiwisata" class="nav-item nav-link">Destinasi</a>
-                        <a href="#potensi" class="nav-item nav-link">Peta Wisata</a>
+                        <a href="#petawisata" class="nav-item nav-link">Peta Wisata</a>
                     </div>
                 </div>
             </nav>
@@ -142,106 +140,17 @@
     </div>
     <!-- About End -->
 
-    <!-- Pricing Plan Start -->
-    <div id="infotanah" class="container-fluid pt-5 pb-3">
+    <div id="datawisata" class="container-fluid pt-5 pb-3">
         <div class="container">
-            <h1 class="display-4 text-center mb-5">Informasi Tanah</h1>
-            <div class="row">
-                @foreach ($infotanah as $info)
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="bg-light text-center mb-2 pt-4">
-                        <div class="d-inline-flex flex-column align-items-center justify-content-center bg-secondary rounded-circle shadow mt-2 mb-4" style="width: 200px; height: 200px; border: 15px solid #ffffff;">
-                            <h3 class="text-white">
-                                {{ $info->jenis_tanah }}
-                            </h3>
-                        </div>
-                        <div class="d-flex flex-column align-items-center py-3">
-                            {{-- 2 kolom 2 baris--}}
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h5 class="font-weight-medium">Ketinggian</h5>
-                                    <p class="text-muted font-italic">{{ $info->ketinggian }} mdpl</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <h5 class="font-weight-medium">Kelembaban</h5>
-                                    <p class="text-muted font-italic">{{ $info->kelembaban }} %</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                @endforeach
-            </div>
-        </div>
-    </div>
-    <!-- Pricing Plan End -->
-
-    <!-- Services Start -->
-    <!-- Destinasi Wisata Start -->
-    <div id="destinasiwisata" class="container-fluid pt-5 pb-3">
-        <div class="container">
-            <h1 class="display-4 text-center mb-5">Destinasi Wisata</h1>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card">
-                        <img src="path/to/image1.jpg" class="card-img-top" alt="Destinasi 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Destinasi 1</h5>
-                            <p class="card-text">Deskripsi destinasi 1.</p>
-                            <a href="#" class="btn btn-primary">Detail</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card">
-                        <img src="path/to/image2.jpg" class="card-img-top" alt="Destinasi 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Destinasi 2</h5>
-                            <p class="card-text">Deskripsi destinasi 2.</p>
-                            <a href="#" class="btn btn-primary">Detail</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card">
-                        <img src="path/to/image3.jpg" class="card-img-top" alt="Destinasi 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Destinasi 3</h5>
-                            <p class="card-text">Deskripsi destinasi 3.</p>
-                            <a href="#" class="btn btn-primary">Detail</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card">
-                        <img src="path/to/image4.jpg" class="card-img-top" alt="Destinasi 4">
-                        <div class="card-body">
-                            <h5 class="card-title">Destinasi 4</h5>
-                            <p class="card-text">Deskripsi destinasi 4.</p>
-                            <a href="#" class="btn btn-primary">Detail</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-<!-- Destinasi Wisata End -->
-
-    <!-- Services End -->
-
-
-    <!-- Features Start -->
-    <div id="destinasiwisata" class="container-fluid pt-5 pb-3">
-        <div class="container">
-            <h1 class="display-4 text-center mb-5">Destinasi Wisata</h1>
+            <h1 class="display-4 text-center mb-5">Data Wisata</h1>
             <div class="row">
                 <div class="col-lg-7 m-0 my-lg-5 pt-0 pt-lg-5 pr-lg-5">
-                    <h1 class="mb-4">Data Wisata</h1>
+                    <h1 class="mb-4">Data Wisata Dieng</h1>
                     <p>Berikut data wisata berdasarkan data pada Kementrian Pariwisata dan Ekonomi Kreatif Indonesia:</p>
                     <div class="row">
                         <h5 class="font-weight-bold">Total Destinasi Wisata:</h5>
                         <div class="col-sm-6 mb-4 d-flex">
-                            <h1 class="text-secondary" data-toggle="counter-up">30  </h1>
+                            <h1 class="text-secondary" data-toggle="counter-up">40  </h1>
                             <span class="text-center font-weight-bold align-items-center text-secondary" style="display:flex">  Wisata</span>
                         </div>
                         <h5 class="font-weight-bold">Total Luas Kawasan Wisata Dieng:</h5>
@@ -260,10 +169,31 @@
             </div>
         </div>
     </div>
-    <!-- Features End -->
+
+    <!-- Destinasi Wisata Start -->
+    <div id="destinasiwisata" class="container-fluid pt-5 pb-3">
+        <div class="container">
+            <h1 class="display-4 text-center mb-5">Destinasi Wisata</h1>
+            <div class="row">
+                @foreach($tour as $item)
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card">
+                            <img src="{{ asset('img/' . $item->photo) }}" class="card-img-top" alt="{{ $item->name }}">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ $item->name }}</h5>
+                                <p class="card-text">{{ $item->description }}</p>
+                                <a href="#petawisata" class="btn btn-primary" onclick="showOnMap({{ $item->latitude }}, {{ $item->longitude }}, '{{ $item->name }}')">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+    
 
     <!-- Pricing Plan Start -->
-    <div id="potensi" class="container-fluid pt-5 pb-3">
+    <div id="petawisata" class="container-fluid pt-5 pb-3">
         <div class="container">
             <h1 class="display-4 text-center mb-5">Peta Destinasi Wisata</h1>
             <div class="row">
@@ -302,13 +232,49 @@
                 accessToken: 'pk.eyJ1IjoiaGFuaXBwdyIsImEiOiJjbHBrZHk0MmMwN3VpMmpvZjhjdWRrYnNlIn0.s2Jc-GJnbtfr1l8HU49tNA'
             }).addTo(map);
 
+            var allPopupContents = [];
             var datas = @json($tour);
 
             datas.forEach(function(data) {
+                var popupContent = `<strong>Nama:</strong> ${data.name}<br>` +
+                                `<strong>Address:</strong> ${data.address}<br>` +
+                                `<strong>Land Area:</strong> ${data.large_area} Ha<br>` +
+                                `<strong>Lat:</strong> ${data.latitude}<br>` +
+                                `<strong>Long:</strong> ${data.longitude}<br>` +
+                                `<strong>Ticket Price (weekday):</strong> Rp. ${data.price_ticket_on_weekday}<br>` +
+                                `<strong>Ticket Price (weekend):</strong> Rp. ${data.price_ticket_on_weekend}`;
+
                 var marker = L.marker([data.latitude, data.longitude], { pmIgnore: true })
-                    .bindTooltip(data.name)
-                    .addTo(map);
+                                .bindTooltip(data.name)
+                                .bindPopup(popupContent)
+                                .addTo(map);
+
+                allPopupContents.push(popupContent);
             });
+
+            // ...
+
+            function showOnMap(latitude, longitude, name) {
+                // Dapatkan indeks data sesuai dengan nama yang diklik
+                var dataIndex = datas.findIndex(data => data.name === name);
+
+                if (dataIndex !== -1) {
+                    // Menampilkan popup dengan semua informasi dari array allPopupContents
+                    var popup = L.popup({
+                            offset: [0, -30]  // Sesuaikan offset agar popup di atas marker
+                        })
+                        .setLatLng([latitude, longitude])
+                        .setContent(allPopupContents[dataIndex])
+                        .openOn(map);
+
+                    // Memusatkan dan memperbesar peta pada lokasi yang diklik
+                    map.setView([latitude, longitude], 18);
+                }
+            }
+
+            // ...
+
+
 
 
             // random color
