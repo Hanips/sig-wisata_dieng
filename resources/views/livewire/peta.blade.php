@@ -41,7 +41,7 @@
                 return color;
             }
             // view maps polygon existing json.stringify
-            var petas = {!! json_encode($petas -> toArray()) !!};
+            var petas = {!! json_encode($tour -> toArray()) !!};
             petas.forEach(function(item) {
                 var cords = JSON.parse(item['batas_lahan']);
                 // get coordinates from geometry on cords
