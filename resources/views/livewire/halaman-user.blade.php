@@ -1,3 +1,12 @@
+<style>
+    .hidden {
+        display: none;
+    }
+
+    #moreButton {
+        margin-top: 20px;
+    }
+</style>
 <div>
     <!-- Topbar Start -->
     <div class="container-fluid bg-primary py-3">
@@ -175,8 +184,8 @@
         <div class="container">
             <h1 class="display-4 text-center mb-5">Destinasi Wisata</h1>
             <div class="row">
-                @foreach($tour as $item)
-                    <div class="col-lg-3 col-md-6 mb-4">
+                @foreach($tour as $index => $item)
+                    <div class="col-lg-3 col-md-6 mb-4 destinasi-card @if($index < 8) visible @else hidden @endif">
                         <div class="card">
                             <img src="{{ asset('img/' . $item->photo) }}" class="card-img-top" alt="{{ $item->name }}">
                             <div class="card-body">
@@ -187,6 +196,10 @@
                         </div>
                     </div>
                 @endforeach
+            </div>
+            <div class="text-center mt-4">
+                <button id="moreButton" class="btn btn-primary">More</button>
+                <button id="showTwoRowsButton" class="btn btn-primary" style="display: none;">Shrink</button>
             </div>
         </div>
     </div>
@@ -274,7 +287,33 @@
 
             // ...
 
+            document.addEventListener('DOMContentLoaded', function () {
+                var moreButton = document.getElementById('moreButton');
+                var showTwoRowsButton = document.getElementById('showTwoRowsButton');
+                var destinasiCards = document.querySelectorAll('.destinasi-card');
 
+                var cardsPerRow = 4; // Number of cards per row
+
+                moreButton.addEventListener('click', function () {
+                    destinasiCards.forEach(function (card) {
+                        card.classList.remove('hidden');
+                    });
+
+                    moreButton.style.display = 'none';
+                    showTwoRowsButton.style.display = 'block';
+                });
+
+                showTwoRowsButton.addEventListener('click', function () {
+                    destinasiCards.forEach(function (card, index) {
+                        if (index >= cardsPerRow * 2) {
+                            card.classList.add('hidden');
+                        }
+                    });
+
+                    moreButton.style.display = 'block';
+                    showTwoRowsButton.style.display = 'none';
+                });
+            });
 
 
             // random color
@@ -287,8 +326,8 @@
                 return color;
             }
             // view maps polygon existing json.stringify
-            var petas = {!! json_encode($petas -> toArray()) !!};
-            petas.forEach(function (item) {
+            var tour = {!! json_encode($tour -> toArray()) !!};
+            tour.forEach(function (item) {
                 var cords = JSON.parse(item['batas_lahan']);
                 // get coordinates from geometry on cords
                 var coordinates = cords.geometry.coordinates[0];
@@ -326,13 +365,7 @@
                     
                 // popup livewire click
                 polygon.bindPopup(
-                    '<b>ID</b> : ' + item['id'] + '<br>' +
-                    "<b>Desa : </b>" + item['nama_desa'] + "<br>" +
-                    "<b>Pemilik petas : </b>" + item['nama_pemiliklahan'] + "<br>" +
-                    "<b>Jenis Tanah : </b>" + item['jenis_tanah'] + "<br>" +
-                    "<b>Ketinggian : </b>" + item['ketinggian'] + " mdpl" + "<br>" +
-                    "<b>Kelembaban : </b>" + item['kelembaban'] + "%<br>" +
-                    "<b>Luas petas : </b>" + item['luas_lahan'] + " m<sup>2</sup>" + "<br>"
+                    '<b>ID</b> : ' + item['id'] + '<br>' 
                 );
             });
 
