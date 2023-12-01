@@ -7,10 +7,11 @@ use Livewire\Component;
 use App\Models\Infotanah;
 use App\Models\Pemiliklahan;
 use App\Models\Desa as ModelsDesa;
+use App\Models\Tour;
 
 class HalamanUser extends Component
 {
-    protected $infotanah, $desas, $pemiliktanah, $sum_luas_tanah, $petas;
+    protected $infotanah, $desas, $pemiliktanah, $sum_luas_tanah, $petas, $tour;
     public $batas_lahan = [];
 
     public function render()
@@ -20,6 +21,7 @@ class HalamanUser extends Component
             ->select('desas.*', 'kecamatans.nama_kecamatan')
             ->get();
         $this->pemiliktanah = Pemiliklahan::all();
+        $this->tour = Tour::all();
         // sum of luas tanah
         $this->sum_luas_tanah = ModelsPotensi::sum('luas_lahan');
         $this->petas = ModelsPotensi::join('desas', 'desas.id', '=', 'potensis.desa_id')
@@ -34,6 +36,7 @@ class HalamanUser extends Component
             'pemiliktanah' => $this->pemiliktanah,
             'sum_luas_tanah' => $this->sum_luas_tanah,
             'petas' => $this->petas,
+            'tour' => $this->tour
         ])->extends('welcome')->section('content');
     }
 }
