@@ -2,11 +2,7 @@
 
 namespace App\Http\Livewire;
 
-use App\Models\Potensi as ModelsPotensi;
 use Livewire\Component;
-use App\Models\Infotanah;
-use App\Models\Pemiliklahan;
-use App\Models\Desa as ModelsDesa;
 use App\Models\Tour;
 
 class HalamanUser extends Component
